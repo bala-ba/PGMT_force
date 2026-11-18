@@ -1,0 +1,26 @@
+--- git status ---
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   configs/reward/pgmt_stage2_terrain.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a") 
+
+
+--- git diff ---
+diff --git a/configs/reward/pgmt_stage2_terrain.yaml b/configs/reward/pgmt_stage2_terrain.yaml
+index 8884e7b..354f9b1 100644
+--- a/configs/reward/pgmt_stage2_terrain.yaml
++++ b/configs/reward/pgmt_stage2_terrain.yaml
+@@ -24,7 +24,7 @@ weights:
+   auxiliary_undesired_contacts: -0.1
+   auxiliary_anchor_contact_force: -0.00001
+   # T1: continuous support-pattern match; reference stance-foot mean, max rate 1.
+-  terrain_touchdown_quality: 10.0
++  terrain_touchdown_quality: 1.5
+   terrain_reference_contact_match: 1.5
+   terrain_slip: -1.0
+   terrain_stumble: -20.0

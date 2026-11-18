@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.egg-info/
+logs/
+!/logs/
+/logs/*
+!/logs/pgmt_stage2_center2x2/
+/logs/pgmt_stage2_center2x2/*
+!/logs/pgmt_stage2_center2x2/train_03/
+/logs/pgmt_stage2_center2x2/train_03/**/*.pt
+!/logs/pgmt_stage2_center2x2/train_03/final.pt
+/logs/pgmt_stage2_center2x2/train_03/**/events.out.tfevents.*
+/logs/pgmt_stage2_center2x2/train_03/**/progress.jsonl
+checkpoints/
+MUJOCO_LOG.TXT
+exported_models/
+wandb/
+.pytest_cache/
+.DS_Store
+
+# Downloaded by scripts/download_robot_assets.py (large third-party runtime assets).
+pmt_tasks/assets/unitree_description/
+pmt_tasks/assets/.unitree-assets-*/
+
+# Generated from the local PGMT LAFAN1 source by prepare_pgmt_lafan.py.
+assets/motions/pgmt_lafan1_50hz/
+# Offline TCRS/mesh contacts and resampled canonical CSV motion segments.
+assets/motions/pgmt_clipped_50hz_tcrs_v*/*
+# Preserve the manually curated training configuration alongside generated data.
+!assets/motions/pgmt_clipped_50hz_tcrs_v1/motion_terrain_compatibility.csv
+
+# Reproducible PGMT terrain meshes, cache and USD (configuration is tracked).
+assets/terrain/pgmt_stage2_v*/

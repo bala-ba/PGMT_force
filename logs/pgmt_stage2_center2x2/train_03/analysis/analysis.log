@@ -1,0 +1,16 @@
+train_01: 5000/20000 verified
+train_01: 10000/20000 verified
+train_01: 15000/20000 verified
+train_01: 20000/20000 verified
+train_01 {"success_by_family": {"flat": 0.5689530978928039, "stairs": 0.4957779084992125, "slope": 0.4712800022669954, "boxes": 0.415004489918093, "rough": 0.5101133280440383}, "mean_level_by_family": {"flat": 6.604588512897491, "stairs": 3.235757140159607, "slope": 2.4638827562332155, "boxes": 1.1193400878310205, "rough": 5.144403115272522}, "t1_rate_mean": 0.07902454107885588, "t2_score_mean": 0.5971221764929601}
+train_02: 5000/20000 verified
+train_02: 10000/20000 verified
+train_02: 15000/20000 verified
+train_02: 20000/20000 verified
+train_02 {"success_by_family": {"flat": 0.548627065979778, "stairs": 0.47215200658922435, "slope": 0.4345327220140058, "boxes": 0.3863688919721792, "rough": 0.48133620021695334}, "mean_level_by_family": {"flat": 5.970994277954102, "stairs": 1.8144182510375977, "slope": 1.2642409514188766, "boxes": 0.8129237135648727, "rough": 3.5778157539367674}, "t1_rate_mean": 0.4922908036739085, "t2_score_mean": 0.8057712196808529}
+train_03: 5000/20000 verified
+train_03: 10000/20000 verified
+train_03: 15000/20000 verified
+train_03: 20000/20000 verified
+train_03 {"success_by_family": {"flat": 0.5546315662456761, "stairs": 0.49649708010360616, "slope": 0.4605636982821878, "boxes": 0.40856670670363315, "rough": 0.5002090443271203}, "mean_level_by_family": {"flat": 6.298617817401886, "stairs": 3.124424408197403, "slope": 2.0404996161460875, "boxes": 1.0330226301550864, "rough": 4.624094184398651}, "t1_rate_mean": 0.33995405709510274, "t2_score_mean": 0.7189141939326428}
+Saved /home/lzp/projects/perceptive_tracking/PMT/logs/pgmt_stage2_center2x2/train_03/analysis

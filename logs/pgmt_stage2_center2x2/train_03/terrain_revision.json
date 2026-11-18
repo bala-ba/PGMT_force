@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "source_run": "logs/pgmt_stage2_center2x2/train_03",
+  "reference_run": "logs/pgmt_stage2_v8_emd/train_cuda0_20261112_104329",
+  "historical_training_terrain": "assets/terrain/pgmt_stage2_v6",
+  "corrected_terrain": "assets/terrain/pgmt_stage2_v6_v8difficulty",
+  "terrain_config": "configs/terrain/pgmt_stage2_v6_v8difficulty.yaml",
+  "comparison_report": "logs/pgmt_v6_v8difficulty_validation/difficulty_comparison.json",
+  "training_argument": "--terrain-asset assets/terrain/pgmt_stage2_v6_v8difficulty",
+  "historical_training_modified": false,
+  "ppo_started": false
+}

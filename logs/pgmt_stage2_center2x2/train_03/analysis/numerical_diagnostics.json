@@ -1,0 +1,101 @@
+{
+  "train_01": {
+    "whole_quantiles": [
+      0.028557426296174526,
+      0.10652400739490968,
+      2.6944526743887227,
+      61.77007687759403,
+      252.19541931152344
+    ],
+    "last1000_quantiles": [
+      0.024223155342042446,
+      0.0648134160786866,
+      8.9380306816101,
+      34.474967113493,
+      113.62996673583984
+    ],
+    "quantile_probabilities": [
+      0.5,
+      0.95,
+      0.99,
+      0.999,
+      1
+    ],
+    "count_above_1": 302,
+    "count_above_10": 109,
+    "log_loss_log_anchor_force_correlation": 0.8937689459693521,
+    "last1000_peak_iteration": 19968,
+    "last1000_peak": {
+      "Loss/value_function_auxiliary": 113.62996673583984,
+      "RewardStep/auxiliary_anchor_contact_force": -0.014107673320436382,
+      "learning_rate": 9.852612533569336e-05,
+      "Loss/approx_kl": 0.003913188863225514
+    }
+  },
+  "train_02": {
+    "whole_quantiles": [
+      0.03396732173860073,
+      0.11652263812720766,
+      1.70112808346739,
+      44.30812062454327,
+      275.2982482910156
+    ],
+    "last1000_quantiles": [
+      0.02762413676828146,
+      0.07724868506193157,
+      1.438507472276687,
+      68.79816899871815,
+      73.24628448486328
+    ],
+    "quantile_probabilities": [
+      0.5,
+      0.95,
+      0.99,
+      0.999,
+      1
+    ],
+    "count_above_1": 241,
+    "count_above_10": 76,
+    "log_loss_log_anchor_force_correlation": 0.7776490914532669,
+    "last1000_peak_iteration": 19387,
+    "last1000_peak": {
+      "Loss/value_function_auxiliary": 73.24628448486328,
+      "RewardStep/auxiliary_anchor_contact_force": -0.011750422380808407,
+      "learning_rate": 4.378938903808594e-05,
+      "Loss/approx_kl": 0.004286481988219748
+    }
+  },
+  "train_03": {
+    "whole_quantiles": [
+      0.029374965466558933,
+      0.12812850475311266,
+      3.941555056571834,
+      50.8527751846314,
+      231.33694458007812
+    ],
+    "last1000_quantiles": [
+      0.02582973800599575,
+      0.0857220739126204,
+      4.482924947738647,
+      20.522775533674086,
+      107.64705657958984
+    ],
+    "quantile_probabilities": [
+      0.5,
+      0.95,
+      0.99,
+      0.999,
+      1
+    ],
+    "count_above_1": 387,
+    "count_above_10": 113,
+    "log_loss_log_anchor_force_correlation": 0.9132326662633481,
+    "last1000_peak_iteration": 19561,
+    "last1000_peak": {
+      "Loss/value_function_auxiliary": 107.64705657958984,
+      "RewardStep/auxiliary_anchor_contact_force": -0.011504768446085273,
+      "learning_rate": 2.2500000000000007e-07,
+      "Loss/approx_kl": 0.03814277004137239
+    }
+  }
+}

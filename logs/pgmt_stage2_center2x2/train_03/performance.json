@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "features": [
+    "audit",
+    "contact_sensor",
+    "placement",
+    "reset_stats",
+    "reward_compile"
+  ],
+  "placement": {
+    "source_frame_cache": true,
+    "geometry_only": true,
+    "local_reference_updates": true,
+    "indexed_buffer_clears": true
+  },
+  "contact_sensor": {
+    "before_history": 3,
+    "before_track_air_time": true,
+    "history_length": 0,
+    "track_air_time": false
+  },
+  "reward_compile": {
+    "backend": "inductor",
+    "fullgraph": true,
+    "dynamic": false
+  }
+}

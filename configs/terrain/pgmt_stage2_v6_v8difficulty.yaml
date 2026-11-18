@@ -1,0 +1,154 @@
+# V6 layout and native terrain types; V8-matched geometry parameters and level schedules.
+# Rough remains signed uniform noise: match total height, not Perlin spectrum.
+type: pgmt_patch_regions
+version: pgmt_stage2_v6_v8difficulty
+seed: 1731
+curriculum: true
+difficulty_range:
+- 0.0
+- 1.0
+num_rows: 10
+num_cols: 5
+families:
+- flat
+- stairs
+- slope
+- boxes
+- rough
+region_size:
+- 24.0
+- 24.0
+patch_grid:
+- 4
+- 4
+patch_size:
+- 6.0
+- 6.0
+border_width: 20.0
+horizontal_scale: 0.1
+vertical_scale: 0.005
+platform_width: 2.0
+flat:
+  class_name: MeshPlaneTerrainCfg
+stairs:
+  class_name: MeshInvertedPyramidStairsTerrainCfg
+  shape: inverted_pyramid
+  height_range:
+  - 0.1
+  - 0.2
+  depth_range:
+  - 0.3
+  - 0.3
+  border_width: 0.5
+  platform_width: 1.2
+slope:
+  class_name: HfInvertedPyramidSlopedTerrainCfg
+  shape: inverted_pyramid
+  platform_width: 1.2
+  angle_range_deg:
+  - 0.0
+  - 11.309932474020215
+  border_width: 0.5
+  slope_range:
+  - 0.0
+  - 0.2
+boxes:
+  class_name: MeshRandomGridTerrainCfg
+  grid_height_range:
+  - 0.03
+  - 0.1
+  grid_width: 0.8
+  platform_width: 1.2
+  connection_width: 0.4
+  holes: false
+rough:
+  class_name: HfRandomUniformTerrainCfg
+  amplitude_range:
+  - 0.01
+  - 0.03
+  horizontal_scale: 0.15
+  noise_step: 0.01
+  downsampled_scale: 0.3
+  border_width: 0.25
+  slope_threshold: 0.75
+spawn_preview:
+  samples_per_patch: 16
+  boundary_margin: 0.25
+  yaw_range:
+  - -3.141592653589793
+  - 3.141592653589793
+  fixed_start_frame: 0
+spawn_patch_grid:
+- 2
+- 2
+difficulty_alignment:
+  source_run: logs/pgmt_stage2_center2x2/train_03
+  reference_run: logs/pgmt_stage2_v8_emd/train_cuda0_20261112_104329
+  source_manifest: assets/terrain/pgmt_stage2_v6/manifest.json
+  source_manifest_sha256: f3ea564bec413f1b2cc603febdcbf1791242fa167d27ebf2540703544e449ad8
+  reference_manifest: assets/terrain/pgmt_stage2_v8/manifest.json
+  reference_manifest_sha256: 304eb66ec66d99238b6753d3476bea4f3e9bc669c22c402a5b4dbb313add9a4f
+  family_mapping:
+    flat: flat
+    stairs: stairs_down
+    slope: slope
+    boxes: platforms
+    rough: rough
+  rough_mapping: Preserve signed uniform noise; half-amplitude = reference Perlin
+    total height / 2. Native quantization and interpolation remain unchanged.
+family_level_difficulty:
+  flat:
+  - 0.06369616873214543
+  - 0.12697867137638702
+  - 0.20409735239361945
+  - 0.3016527635528529
+  - 0.48132702392002724
+  - 0.5912755577277722
+  - 0.660663577576718
+  - 0.7729496560983998
+  - 0.8543624991465423
+  - 0.9935072423787767
+  stairs:
+  - 0.00803419948728501
+  - 0.1783189790216296
+  - 0.2571859232497317
+  - 0.3077336345949472
+  - 0.4977169563081466
+  - 0.5110741278922115
+  - 0.6492078431983115
+  - 0.7030509597490161
+  - 0.8405820470204366
+  - 0.9491575788904827
+  slope:
+  - 0.08899970915164611
+  - 0.13430605004519072
+  - 0.2565107533556335
+  - 0.31305626010816984
+  - 0.4052438964922683
+  - 0.5840225411273987
+  - 0.6128869206551001
+  - 0.7135253538014698
+  - 0.8656839406038429
+  - 0.9214901689992722
+  boxes:
+  - 0.08563074483360564
+  - 0.1607706485286172
+  - 0.2098818123610171
+  - 0.38283978188799817
+  - 0.47205394471173373
+  - 0.5180991955012806
+  - 0.6566116341061443
+  - 0.7311247188497177
+  - 0.8274043911346578
+  - 0.9162318643648144
+  rough:
+  - 0.08158535541215321
+  - 0.11670529287822722
+  - 0.272575768505187
+  - 0.32646860018226953
+  - 0.45661038765794065
+  - 0.5173788718727491
+  - 0.6468283581714147
+  - 0.7544574242721801
+  - 0.8975145271046687
+  - 0.9033535288949167
